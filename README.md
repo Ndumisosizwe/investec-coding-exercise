@@ -6,7 +6,7 @@ To run solution samples, please find the class
 com.investec.assessment.AssessmentApp
 ```
 
-#Switching json files (where to change file path/names)
+# Switching json files (where to change file path/names)
 Please find my utility class :
 ```
 com.investec.assessment.util.AddressUtil
