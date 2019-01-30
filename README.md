@@ -1,4 +1,23 @@
 # investec-coding-exercise
+
+# The run (Main) class :
+To run solution samples, Please find the class
+```
+com.investec.assessment.AssessmentApp
+```
+
+### Building the App
+Use maven to build and get dependecies, on your terminal : 
+
+```
+mvn install
+```
+### Java version
+```
+JDK 1.8
+```
+
+# Problem Instructions
 Problems to solve using language of choice.
 
 Write any utility functions you feel necessary.
@@ -17,7 +36,6 @@ public int highestCommonFactor(int[] numbers) {
 }
 ```
 
- 
 ### 2.
 Given the attached addresses.json file which contains an array of address, do the following:
 ### a
