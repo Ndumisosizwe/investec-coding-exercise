@@ -14,4 +14,7 @@ public enum AddressType {
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }
 }

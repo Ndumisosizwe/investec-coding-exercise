@@ -1,6 +1,7 @@
 package com.investec.assessment.core.base;
 
 import com.investec.assessment.core.domain.Address;
+import com.investec.assessment.core.domain.AddressType;
 import com.investec.assessment.exception.InvalidAddressException;
 
 /**
@@ -16,6 +17,18 @@ public interface AddressProcessor {
      */
     String prettyPrintAddress(Address address);
 
+    /**
+     * Pretty print all the addresses in the attached file
+     */
+    void prettyPrintAllAddressesInFile();
+
+    /**
+     * Iterates through a json file with address objects and only prints addresses of a t
+     * he given type (postal, physical, business)
+     *
+     * @param addressType The type of the address
+     */
+    void printAddressOfType(AddressType addressType);
 
     /**
      * @param address The address to be validated.
@@ -23,12 +36,4 @@ public interface AddressProcessor {
      * @see InvalidAddressException
      */
     boolean isValid(Address address) throws InvalidAddressException;
-
-
-    /**
-     * Pretty print all the addresses in the attached file
-     *
-     * @param filePath The attached file.
-     */
-    void prettyPrintAllAddressesInFile(String filePath);
 }

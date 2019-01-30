@@ -1,13 +1,29 @@
-# investec-coding-exercise
+# Investec-Coding-Exercise
 
 # The run (Main) class :
-To run solution samples, Please find the class
+To run solution samples, please find the class
 ```
 com.investec.assessment.AssessmentApp
 ```
 
+#Switching json files (where to change file path/names)
+Please find my utility class :
+```
+com.investec.assessment.util.AddressUtil
+```
+where you can make the change inorder to attach a different file for example.
+
+
+### JSON file location
+You can put the files in :
+```
+/resources
+```
+
+can be anywhere in the classpath.
+
 ### Building the App
-Use maven to build and get dependecies, on your terminal : 
+Use maven to build and get dependencies, on your terminal : 
 
 ```
 mvn install
@@ -16,6 +32,8 @@ mvn install
 ```
 JDK 1.8
 ```
+
+
 
 # Problem Instructions
 Problems to solve using language of choice.
