@@ -1,14 +1,15 @@
 package com.investec.assessment;
 
 import com.investec.assessment.core.base.AddressProcessor;
+import com.investec.assessment.core.base.Calculator;
 import com.investec.assessment.core.domain.Address;
 import com.investec.assessment.core.domain.AddressType;
 import com.investec.assessment.core.impl.AddressProcessorImpl;
+import com.investec.assessment.core.impl.CalculatorImpl;
 import com.investec.assessment.util.AddressUtil;
 import com.investec.assessment.value.Country;
 import com.investec.assessment.value.Province;
 
-import java.io.IOException;
 import java.util.Arrays;
 
 import static com.investec.assessment.value.AddressType.BUSINESS;
@@ -20,7 +21,13 @@ import static com.investec.assessment.value.AddressType.BUSINESS;
 public class AssessmentApp {
 
 
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
+
+        // Finding GCD
+        Calculator calculator = new CalculatorImpl();
+        System.out.println(calculator.highestCommonFactor(new int[]{1, 6, 878, 1, 44, 6, 9}));
+        System.out.println();
+
         AddressProcessor addressProcessor = new AddressProcessorImpl();
 
         // Showing usage of 'prettyPrintAddress' method. Pretty printing all addresses in file
