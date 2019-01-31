@@ -13,6 +13,8 @@ public class CalculatorImpl implements Calculator {
 
     @Override
     public int highestCommonFactor(int[] numbers) {
+        if (numbers == null || numbers.length == 0)
+            return 0;
         Arrays.sort(numbers);
         int maxGcd = (new BigInteger(numbers[0] + "").gcd(new BigInteger(numbers[1] + ""))).intValue();
         for (int i = 1; i < numbers.length - 1; i++) {
@@ -24,6 +26,6 @@ public class CalculatorImpl implements Calculator {
     }
 
     public static void main(String[] args) {
-        System.out.println(new CalculatorImpl().highestCommonFactor(new int[]{1701,3768}));
+        System.out.println(new CalculatorImpl().highestCommonFactor(new int[]{1701, 3768}));
     }
 }
